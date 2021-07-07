@@ -11,9 +11,28 @@
 
     <artifactId>eshop-goods</artifactId>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <!--设置为pom，管理依赖-->
+    <packaging>pom</packaging>
 
+    <!--使用properties统一管理属性-->
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <!--配置编译JDK版本-->
+    <build>
+        <plugins>
+            <!--JDK版本 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -11,7 +11,6 @@
         <module name="eshop-order" />
         <module name="eshop-common" />
         <module name="eshop-stock" />
-        <module name="eshop-goods" />
       </profile>
     </annotationProcessing>
   </component>
